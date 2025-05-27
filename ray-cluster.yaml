@@ -1,0 +1,28 @@
+apiVersion: ray.io/v1
+kind: RayCluster
+metadata:
+  name: stylized-rag-cluster
+spec:
+  rayVersion: "2.10.0"
+  headGroupSpec:
+    rayStartParams:
+      dashboard-host: "0.0.0.0"
+      port: "6379"
+      block: "true"
+    template:
+      spec:
+        containers:
+          - name: ray-head
+            image: rayproject/ray:2.10.0
+            ports:
+              - containerPort: 6379
+              - containerPort: 8265
+  workerGroupSpecs:
+    - groupName: worker-group
+      replicas: 1
+      rayStartParams: {}
+      template:
+        spec:
+          containers:
+            - name: ray-worker
+              image: rayproject/ray:2.10.0

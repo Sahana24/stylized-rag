@@ -1,0 +1,13 @@
+streamlit
+requests
+beautifulsoup4
+rank_bm25
+langchain
+langchain-community
+langchain-chroma
+langchain-huggingface
+sentence-transformers
+huggingface_hub
+openai
+python-dotenv
+wikipedia
