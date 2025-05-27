@@ -120,4 +120,4 @@ The project uses GitHub Actions for automated builds and deployments:
 
 ---
 
-*Made with ❤️ by [Sahana Yadnakudige Subramanya]* 
+*Made with ❤️ by [Sahana Yadnakudige Subramanya](https://github.com/Sahana24)* 
